@@ -10,7 +10,7 @@ const CustomLink = ({href, title, className=""}) =>{
      return(
         <Link href={href} className={`${className} relative group`}>
             {title}
-            <span className={`h-[2px] inline-block bg-highlight 
+            <span className={`h-[2px] inline-block bg-highlight
             absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
             ${router.asPath === href ? 'w-full': 'w-0'}
             `}>&nbsp;</span>
@@ -23,10 +23,10 @@ const NavBar = () => {
 
         <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
             <nav>
-                <CustomLink href="/" title="Home" className="mr-4"/>
-                <CustomLink href="/about" title="About me" className="mx-4"/>
-                <CustomLink href="/projects" title="Projects" className="mx-4" />
-                <CustomLink href="/creative" title="Creative Corner" className="ml-4"/>
+                <CustomLink href="/" title="Home" className="mr-4 text-lg"/>
+                <CustomLink href="/about" title="About me" className="mx-4 text-lg"/>
+                <CustomLink href="/projects" title="Projects" className="mx-4 text-lg" />
+                <CustomLink href="/creative" title="Creative Corner" className="ml-4 text-lg"/>
             </nav>
 
             <nav className="flex items-center justify-center flex-wrap">

@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import NavBar from '@/components/Navbar'
 import '@/styles/globals.css'
 import { Roboto_Slab } from 'next/font/google'
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }) {
       <main className={`${robotos.variable} font-robotos bg-primary text-black w-full min-h-screen`}>
         <NavBar />
         <Component {...pageProps} />
+        <Footer/>
       </main>
 
     </>

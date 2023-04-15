@@ -23,7 +23,11 @@ export const theme = {
       highlight: "#00ebc7",
       secondary: "#ff5470",
       tertiary: "#fde24f",
+    },
+    animation:{
+      'spin-slow': 'spin 8s linear infinite'
     }
+
   },
 }
 export const plugins = []
