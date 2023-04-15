@@ -1,14 +1,23 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Head from 'next/head'
+import Layout from '@/components/Layout'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main>
-      <div>
-        <h1>Home</h1>
-      </div>
-    </main>
+    <>
+      <Head>
+        <title>Keyukemi.Dev</title>
+        <meta name="description" content="Website created by Keyukemi Ubi" />
+      </Head>
+
+      <main className="text-headline w-full flex items-center min-h-screen">
+        <Layout>
+
+        </Layout>
+      </main>
+
+    </>
   )
 }
+
