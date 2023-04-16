@@ -80,11 +80,6 @@ const about = () => {
                                     But I promise to update as I remember stuff, but this is what you get for now. 
                                 `}
                             </p>
-                            <p>
-                                {`
-                                
-                                `}
-                            </p>
                         </div>
                             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-headline bg-primary py-8">
                                 <div  className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-headline"/>
@@ -95,7 +90,7 @@ const about = () => {
                                 <div className="flex flex-col items-end justify-center">
                                     <span className="inline-block text-7xl font-bold">
                                         <AnimatedNumbers value={2}/>+
-                                    </span>
+                                    </span> 
                                     <h2 className="text-xl font-medium capitalize text-headline/75">Satisfied Clients</h2>
                                 </div>
                                 <div className="flex flex-col items-end justify-center">
