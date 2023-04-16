@@ -12,8 +12,8 @@ const Details = ({country, month,year, activities}) =>{
         transition={{duration:0.5, type: "spring"}}>
 
             <h3 className="capitalize font-bold text-2xl">{month} |&nbsp;<a href="" 
-            className="capitalize !text-secondary" target="_blank" >{country}</a></h3>
-            <span className="capitalize font-medium text-paragraph">
+            className="capitalize text-secondary dark:text-highlight " target="_blank" >{country}</a></h3>
+            <span className="capitalize font-medium text-paragraph dark:text-primary/75 ">
                 {year}
             </span>
             <p className="font-medium w-full text-lg">
@@ -37,7 +37,7 @@ const Trips = ({}) =>{
                 <h2 className="font-bold text-8xl w-full text-center mb-8">World Travel</h2>
                 <div ref={ref} className="w-[75%] mx-auto relative">
                     <motion.div style={{scaleY: scrollYProgress}} 
-                    className="absolute left-9 top-0 w-[4px] origin-top h-full bg-headline"/>
+                    className="absolute left-9 top-0 w-[4px] origin-top h-full bg-headline dark:bg-primary "/>
                     <ul className="w-full flex flex-col item-start justify-between ml-4">
                         <Details
                             country={"Republic of Benin"}

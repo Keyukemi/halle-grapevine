@@ -20,7 +20,8 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/kklogo.ico"/>
 
       </Head>
-      <main className={`${robotos.variable} font-robotos bg-primary text-headline w-full min-h-screen`}>
+      <main className={`${robotos.variable} font-robotos bg-primary w-full min-h-screen
+       dark:bg-headline`}>
         <NavBar />
         <Component {...pageProps} />
         <Footer/>

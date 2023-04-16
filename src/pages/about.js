@@ -39,14 +39,14 @@ const about = () => {
                 <title>Keyukemi | About Page</title>
                 <meta name="description" content="What you need to know about Keyukemi Ubi"/>
             </Head>
-            <main className="flex w-full flex-col items-center justify-center">
+            <main className="flex w-full flex-col items-center justify-center text-headline dark:text-primary">
                 <Layout className="pt-12">
-                    <AnimatedHello text="Vivere Con Audacia!" className="!text-7xl !text-center"/>
-                    <AnimatedWorld text= "Live Audaciously..."className="!text-2xl italic !text-center !text-secondary mb-32"/>
+                    <AnimatedHello text="Vivere Con Audacia!" className="text-7xl !text-center dark:text-primary"/>
+                    <AnimatedWorld text= "Live Audaciously..."className="!text-2xl italic !text-center text-secondary mb-32 dark:text-highlight"/>
 
                     <div className="grid grid-cols-8 gap-16 w-full">
-                        <div className="col-span-3 flex flex-col items-start justify-start text-headline">
-                            <motion.h2 className="uppercase text-2xl font-bold !text-headline/75" whileHover ={{scale:1.2}}>About Me</motion.h2>
+                        <div className="col-span-3 flex flex-col items-start justify-start">
+                            <motion.h2 className="uppercase text-2xl font-bold text-headline/75" whileHover ={{scale:1.2}}>About Me</motion.h2>
                             <p className="font-medium my-2">
                             {`I am a Software Developer. This means I know my way around HTML, CSS and Javascript. 
                             From time to time, I  dabble into PHP and C# if I need to, but it's not one of my favourites. 
@@ -58,7 +58,7 @@ const about = () => {
                                 I remember the quote, “a jack of all trades is a master of none, but oftentimes better than a master of one.”
                                 `}
                             </p>
-                            <motion.h3 className="text-lg font-bold !text-headline/75" whileHover ={{scale:1.2}}>What do I do for Fun?</motion.h3>
+                            <motion.h3 className="text-lg font-bold text-headline/75" whileHover ={{scale:1.2}}>What do I do for Fun?</motion.h3>
                             <p className="font-medium my-2">
                                 {`To be honest, I swear I could make a long list here, and you would be amazed, but in the next month, 
                                 everything may have changed. However, over the years, some activities have stayed interesting to me. I
@@ -71,7 +71,7 @@ const about = () => {
                                 I know you may start to think that I spend a lot of time outdoors, but I am as ‘indoorsy’ as they come.
                                 `}
                             </p>
-                            <motion.h3 className="text-lg font-bold  !text-headline/75" whileHover ={{scale:1.2}}>How I contribute to the world?</motion.h3>
+                            <motion.h3 className="text-lg font-bold  text-headline/75" whileHover ={{scale:1.2}}>How I contribute to the world?</motion.h3>
                             <p className="font-medium my-2">
                                 {`
                                     I have always wanted to see the world. That’s why I love movies; it immerses me in a whole new world. 
@@ -86,22 +86,22 @@ const about = () => {
                                 <Image src={profileImage} alt="" className=" w-full h-auto rounded-2xl" />
                             </div>
 
-                            <div className="col-span-2 flex flex-col items-end justify-between text-headline">
+                            <div className="col-span-2 flex flex-col items-end justify-between">
                                 <div className="flex flex-col items-end justify-center">
                                     <span className="inline-block text-7xl font-bold">
                                         <AnimatedNumbers value={2}/>+
                                     </span> 
-                                    <h2 className="text-xl font-medium capitalize text-headline/75">Satisfied Clients</h2>
+                                    <h2 className="text-xl font-medium capitalize text-headline/75 dark:text-primary">Satisfied Clients</h2>
                                 </div>
                                 <div className="flex flex-col items-end justify-center">
                                     <span className="inline-block text-7xl font-bold">
                                     <AnimatedNumbers value={5}/>+</span>
-                                    <h2 className="text-xl font-medium capitalize text-headline/75">Projects Completed</h2>
+                                    <h2 className="text-xl font-medium capitalize text-headline/75 dark:text-primary">Projects Completed</h2>
                                 </div> 
                                 <div className="flex flex-col items-end justify-center">
                                     <span className="inline-block text-7xl font-bold">
                                     <AnimatedNumbers value={3}/>+</span>
-                                    <h2 className="text-xl font-medium capitalize text-headline/75">Countries Visited</h2>
+                                    <h2 className="text-xl font-medium capitalize text-headline/75 dark:text-primary">Countries Visited</h2>
                                 </div>
                             </div>
                     </div>

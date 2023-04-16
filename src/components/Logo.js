@@ -10,8 +10,11 @@ const MotionLink = motion(Link);
 const Logo = () => {
     return(
         <div className="flex items-center justify-center mt-2">
-           <MotionLink href="/"  className="bg-headline rounded-full w-20 h-20 flex items-center justify-center"  whileHover ={{scale:1.2}} >
-                <Image src="/images/kkFaceeLogo2.png" alt="My Image" width={100} height={100} className="rounded-full w-16 h-16 flex items-center justify-center"/> 
+           <MotionLink href="/"  className="bg-headline rounded-full w-20 h-20 flex dark:bg-primary
+           items-center justify-center dark:border-primary border border-solid border-transparent"  
+           whileHover ={{scale:1.5}} >
+                <Image src="/images/kkFaceeLogo2.png" alt="My Image" width={100} height={100} 
+                className="rounded-full w-16 h-16 flex items-center justify-center"/> 
            </MotionLink>
         </div>
         

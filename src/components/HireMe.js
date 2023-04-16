@@ -9,7 +9,7 @@ const HireMe = () => {
         <div className="fixed left-4 bottom-4 flex items-center justify-center overflow-hidden">
             <div className="w-48 h-auto flex items-center justify-center relative">
                 {/* <CircularText className={"animate-spin-slow"}/> */}
-                <Image src={uiEngineer} className={"animate-spin-slow"} alt=""/>
+                <Image src={uiEngineer} className={"dark:bg-primary/70 dark:rounded-full animate-spin-slow"} alt=""/>
                 <Link href="/"  
                 className="bg-headline rounded-full w-20 h-20 flex items-center justify-center
                 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 shadow-md border border-solid
