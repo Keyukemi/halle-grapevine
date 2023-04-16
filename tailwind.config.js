@@ -26,6 +26,9 @@ export const theme = {
     },
     animation:{
       'spin-slow': 'spin 8s linear infinite'
+    },
+    backgroundImage:{
+      orbitLight: 'repeating-radial-gradient(#00214d 2px ,#fffffe 5px,#fffffe 100px);'
     }
 
   },

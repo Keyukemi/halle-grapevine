@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { GithubIcon, LinkedInIcon, TwitterIcon } from "./Icons";
+import { BlogPen, GithubIcon, LinkedInIcon, TwitterIcon } from "./Icons";
 import {motion} from "framer-motion"; 
 
 const CustomLink = ({href, title, className=""}) =>{
@@ -10,7 +10,7 @@ const CustomLink = ({href, title, className=""}) =>{
      return(
         <Link href={href} className={`${className} relative group`}>
             {title}
-            <span className={`h-[2px] inline-block bg-highlight
+            <span className={`h-[2px] inline-block bg-secondary
             absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
             ${router.asPath === href ? 'w-full': 'w-0'}
             `}>&nbsp;</span>
@@ -40,10 +40,11 @@ const NavBar = () => {
                 <motion.a href="https://www.linkedin.com/in/keyukemi-ubi/" target={"_blank"} className="w-8 mx-3"
                 whileHover={{y: -3}}
                 whileTap={{scale: 0.8}}> <LinkedInIcon/> </motion.a>
-                {/* <a href="/" target={"_blank"}>L/D</a> */}
-                <motion.a href="https://medium.com/@keyukemi" target={"_blank"} className="bg-headline text-primary text-xl flex items-center justify-center rounded w-20 h-auto ml-3" 
+                <motion.a href="https://medium.com/@keyukemi" target={"_blank"}
+                 className="bg-headline text-secondary text-xl flex items-center p-2.5 px-7 rounded-lg 
+                 justify-center w-20 h-auto ml-3 border-solid border-2 hover:bg-transparent hover:text-secondary" 
                 whileHover={{y: -3}}
-                whileTap={{scale: 0.8}}>Blog</motion.a>
+                whileTap={{scale: 0.8}}>Blog<BlogPen className="ml-1 w-6"/></motion.a>
             </nav>
 
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">

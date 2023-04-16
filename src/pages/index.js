@@ -33,7 +33,7 @@ export default function Home() {
                 <AnimatedWorld text="Welcome to my world!"/>
                 <div className='flex item-center self-start mt-2'>
                   <Link href="/Keyu_SWE_RESUME.pdf" target={'blank'}
-                    className='flex items-center bg-headline text-secondary p-2.5 px-7 rounded-lg text-2xl font-semibold hover:bg-highlight  hover:text-headline
+                    className='flex items-center bg-headline text-secondary p-2.5 px-7 rounded-lg text-2xl font-semibold hover:bg-transparent  hover:text-secondary
                     border-2 border-solid border-transparent hover:border-headline' download={true}
                   >Resume <LinkArrow className="ml-1 w-6"/>
                   </Link>
@@ -48,7 +48,7 @@ export default function Home() {
         </Layout>
         <HireMe />
         <div className='absolute right-8 -bottom-20 inline-block'>
-          <Link href="/"><Image src={coolGirl} alt='A lady in dreadlock, headphones and glasses' className='w-full h-auto rounded-full opacity-50'/></Link>
+          <Link href="/"><Image src={coolGirl} alt='A lady in dreadlock, headphones and glasses' className='priority w-full h-auto rounded-full opacity-50'/></Link>
           
         </div>
       </main>

@@ -14,7 +14,7 @@ const HireMe = () => {
                 className="bg-headline rounded-full w-20 h-20 flex items-center justify-center
                 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 shadow-md border border-solid
                 border-paragraph">
-                <Image src="/images/kkFaceLogos.jpeg" alt="My Image" width={100} height={100} 
+                <Image src="/images/kkFaceeLogo2.png" alt="My Image" width={100} height={100} 
                 className="rounded-full w-16 h-16 flex items-center justify-center"/> 
                  </Link>
 
