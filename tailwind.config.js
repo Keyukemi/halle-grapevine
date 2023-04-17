@@ -31,7 +31,14 @@ module.exports ={
         'spin-slow': 'spin 8s linear infinite'
       },
       backgroundImage:{
-        orbitLight: 'repeating-radial-gradient(#00214d 2px ,#fffffe 5px,#fffffe 100px);'
+        orbitLight: 'repeating-radial-gradient(#00214d 2px ,#fffffe 5px,#fffffe 100px);',
+        orbitDark: 'repeating-radial-gradient(#fffffe 2px ,#00214d 8px,#00214d 100px);',
+        orbitLightLg: 'repeating-radial-gradient(#00214d 2px ,#fffffe 5px,#fffffe 80px);',
+        orbitDarkLg: 'repeating-radial-gradient(#fffffe 2px ,#00214d 8px,#00214d 80px);',
+        orbitLightMd: 'repeating-radial-gradient(#00214d 2px ,#fffffe 5px,#fffffe 60px);',
+        orbitDarkMd: 'repeating-radial-gradient(#fffffe 2px ,#00214d 6px,#00214d 60px);',
+        orbitLightSm: 'repeating-radial-gradient(#00214d 2px ,#fffffe 5px,#fffffe 40px);',
+        orbitDarkSm: 'repeating-radial-gradient(#fffffe 2px ,#00214d 4px,#00214d 40px);',
       }
       
     },

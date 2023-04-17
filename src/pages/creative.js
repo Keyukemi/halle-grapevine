@@ -9,11 +9,13 @@ import keeperImage from "../../public/images/creative_images/rmK2.png"
  
 const ComingSoon = ({message}) =>{
     return( 
-        <div className="w-full">
+        <div className="w-full ">
             <article className="w-full flex items-center justify-between rounded-3xl border border-headline border-solid
             bg-primary shadow-2xl p-12 mt-12 relative rounded-br-2xl">
-                <div  className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem] bg-headline rounded-br-2xl"/>
-                <h2 className="my-2 text-9xl text-bold w-full text-headline animate-pulse">{message}</h2>
+                <div  className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem]
+                    md:w-[100%] 
+                 bg-headline rounded-br-2xl"/>
+                <h2 className="my-2 text-9xl text-bold w-full text-headline animate-pulse md:text-6xl sm:text-4xl ">{message}</h2>
             <div>
 
             </div>
