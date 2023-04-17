@@ -40,14 +40,14 @@ export default function Home() {
                 
                 <div className='flex item-center self-start mt-2 lg:self-center'>
                   <Link href="/Keyu_SWE_RESUME.pdf" target={'blank'}
-                    className='flex items-center bg-secondary text-headline dark:text-primary 
-                    md:text-s sm:text-xs md:px-4 dark:bg-highlight p-2.5 px-7 rounded-lg text-2xl font-semibold hover:bg-transparent hover:text-headline
+                    className='flex items-center bg-secondary text-headline dark:text-primary sm:px-1.5
+                    md:text-sm sm:text-xs md:px-4 dark:bg-highlight p-2.5 px-7 rounded-lg text-2xl font-semibold hover:bg-transparent hover:text-headline
                     border-2 border-solid border-transparent hover:border-headline hover:dark:border-primary hover:dark:bg-transparent'  download={true}
-                  >Resume <LinkArrow className="ml-1 w-6"/>
+                  >Resume <LinkArrow className="ml-1 w-6 md:text-s sm:text-xs sm:w-3"/>
                   </Link>
                   <Link href="mailto:keyukemi.ku@gmail.com" target={'blank'}
                     className='ml-4 text-2xl font-semibold capitalize dark:text-primary text-headline underline p-2.5 flex items-center 
-                    md:text-s sm:text-xs md:px-4
+                    md:text-s sm:text-xs md:px-4 sm:px-2
                     border-2 border-solid border-transparent hover:border-headline rounded-lg px-7 hover:no-underline hover:dark:border-primary '
                   >
                     Contact</Link>
