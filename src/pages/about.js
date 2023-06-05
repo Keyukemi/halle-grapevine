@@ -7,6 +7,7 @@ import Image from "next/image";
 import profileImage from "../../public/images/creative_images/coolGirl.png"
 import TechSkills from "@/components/TechSkills";
 import Trips from "@/components/Trips";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const AnimatedNumbers = ({value}) =>{
     const ref = useRef(null);
@@ -39,6 +40,7 @@ const about = () => {
                 <title>Keyukemi | About Page</title>
                 <meta name="description" content="What you need to know about Keyukemi Ubi"/>
             </Head>
+            <TransitionEffect/>
             <main className="flex w-full flex-col items-center justify-center text-headline dark:text-primary">
                 <Layout className="pt-12">
                     <AnimatedHello text="Vivere Con Audacia!" className="text-7xl !text-center

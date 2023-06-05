@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
 import coolGirl from "../../public/images/creative_images/coolGirl2.png"
+import TransitionEffect from '@/components/TransitionEffect'
 
 
 export default function Home() {
@@ -16,7 +17,8 @@ export default function Home() {
         <title>Keyukemi.Dev</title>
         <meta name="description" content="Website created by Keyukemi Ubi" />
       </Head>
-
+      
+      <TransitionEffect />
       <main className="text-headline dark:text-primary w-full flex items-center min-h-screen">
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
             <div className="flex items-center justify-between w-full lg:flex-col">

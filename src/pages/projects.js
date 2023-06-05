@@ -11,11 +11,13 @@ import closet from "../../public/images/project_images/closet.png"
 import dglImage from "../../public/images/project_images/dglImage.png"
 import humandetect from "../../public/images/project_images/humandetect.png"
 import todoImage from "../../public/images/project_images/todoImage.png"
+import TransitionEffect from "@/components/TransitionEffect";
 
 
 const PersonalProj = ({type, title, summary, img, link, githubLink}) =>{
     return( 
         <div>
+            <TransitionEffect/>
             <article className="w-full flex items-center justify-between rounded-3xl border
              border-headline border-solid text-headline  dark:bg-headline dark:border-primary dark:text-primary
             bg-primary shadow-2xl p-12 mt-12 relative rounded-br-2xl

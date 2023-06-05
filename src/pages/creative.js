@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import keeperImage from "../../public/images/creative_images/rmK2.png"
+import TransitionEffect from "@/components/TransitionEffect";
 
 
  
@@ -32,6 +33,8 @@ const Creative = () =>{
                 <title>Keyukemi | Creative Corner </title>
                 <meta name="description" content="What you need to know about Keyukemi Ubi"/>
             </Head>
+
+            <TransitionEffect/>
             <main className="w-full mb-16 flex flex-col items-center justify-center min-h-screen">
                 <div>
                     <ComingSoon
