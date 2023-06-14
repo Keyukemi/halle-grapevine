@@ -45,43 +45,46 @@ const about = () => {
                 <Layout className="pt-12">
                     <AnimatedHello text="Vivere Con Audacia!" className="text-7xl !text-center
                      dark:text-primary lg:!text-5xl sm:mb-4 md:!text-4xl xs:!text-2xl " />
-                    <AnimatedWorld text= "Live Audaciously..."className="!text-2xl lg:!text-xl  sm:!text-lg
-                    italic !text-center text-secondary mb-32 sm:mb-8 dark:text-highlight"/>
+                    <AnimatedWorld text= "Live Audaciously..."className="!text-xl lg:!text-lg  sm:!text-md
+                    italic !text-center text-secondary mb-20 sm:mb-8 dark:text-highlight"/>
 
                     <div className="grid grid-cols-8 gap-16 w-full sm:gap-8">
                         <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 ">
                             <motion.h2 className="uppercase text-2xl font-bold text-headline/75" whileHover ={{scale:1.2}}>About Me</motion.h2>
                             <p className="font-medium my-2">
-                            {`I am a Software Developer. This means I know my way around HTML, CSS and Javascript. 
-                            From time to time, I  dabble into PHP and C# if I need to, but it's not one of my favourites. 
-                            If you are curious about my skills, check out my Github. I am very open to learning and growing as a Software Engineer.`}
+                            {`Hi, I am Keyukemi Ubi. Everyone calls me Keyu or K; whichever you choose is fine.  
+                            You are probably here because you are curious about me. 
+                            This Bio won’t tell you much, but it will give you a glimpse, at the very least. .`}
                             </p>
                             <p className="font-medium my-2">
-                                {`My day job is quite different, though. You can find out more about that in my resume if you are curious. 
-                                I am a Generalist; this means I dip my hands into many pies. When I get worried about my career, 
-                                I remember the quote, “a jack of all trades is a master of none, but oftentimes better than a master of one.”
+                                {`Work is essential to our human existence so that I will start with that. 
+                                I contribute to maintaining the structural design of society by being a Software engineer. 
+                                So at least 8 hours a day, you might find me working on something that concerns code. 
+                                I am a User Interface Engineer, or what people might call Frontend Engineer, but I dabble in the backend tasks from time to time. 
+                                I like to say UI Engineer because I really care about implementing designs that make people have the most seamless and enthralling experience that they come back for more.
+                                Keep scrolling to see the tools, languages, and frameworks I know. 
                                 `}
                             </p>
-                            <motion.h3 className="text-lg font-bold text-headline/75" whileHover ={{scale:1.2}}>What do I do for Fun?</motion.h3>
+                            <motion.h3 className="text-lg font-bold text-headline/75" whileHover ={{scale:1.2}}>When I am not working, Who am I?</motion.h3>
                             <p className="font-medium my-2">
-                                {`To be honest, I swear I could make a long list here, and you would be amazed, but in the next month, 
-                                everything may have changed. However, over the years, some activities have stayed interesting to me. I
-                                 love reading, yoga, watching movies, travel and hearing people’s stories. 
-
+                                {`A wanderer. I like to travel, see new places, experience new cultures, and pick up new languages.
+                                    I also like to stay fit and healthy, so I am a gym rat. 
+                                    I also like swimming and want to take on more fun physical activities.
+                                    My writings are my primary channel of expression, so you can find me on Medium talking about everything and anything. 
                                 `}
                             </p>
-                            <p className="font-medium my-2">
-                                {`As you can see, that’s the pretty standard stuff. Maybe even classified as boring. 
-                                I know you may start to think that I spend a lot of time outdoors, but I am as ‘indoorsy’ as they come.
-                                `}
-                            </p>
-                            <motion.h3 className="text-lg font-bold  text-headline/75" whileHover ={{scale:1.2}}>How I contribute to the world?</motion.h3>
+                           
+                            <motion.h3 className="text-lg font-bold  text-headline/75" whileHover ={{scale:1.2}}>Viva la Vida</motion.h3>
                             <p className="font-medium my-2">
                                 {`
-                                    I have always wanted to see the world. That’s why I love movies; it immerses me in a whole new world. 
-                                    There is so much undiscovered and unexplored beauty in the world that makes me a Fernweh. 
-                                    I don’t think I have any more to tell you. 
-                                    But I promise to update as I remember stuff, but this is what you get for now. 
+                                    When I am not doing any of these, I am cuddled up in bed, watching anime or a Korean series.
+                                    And if you can’t find me there, I am probably reading a book or exploring my many curiosities on Youtube. 
+                                `}
+                            </p>
+                            <p className="font-medium my-2">
+                                {`
+                                    Either way, Thank you for being curious about me.
+                                    Keyu 🖤
                                 `}
                             </p>
                         </div>
