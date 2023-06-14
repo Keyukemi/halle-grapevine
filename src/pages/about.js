@@ -50,7 +50,8 @@ const about = () => {
 
                     <div className="grid grid-cols-8 gap-16 w-full sm:gap-8">
                         <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 ">
-                            <motion.h2 className="uppercase text-2xl font-bold text-headline/75" whileHover ={{scale:1.2}}>About Me</motion.h2>
+                            <motion.h2 className="uppercase text-2xl font-bold text-headline/75  dark:text-primary " 
+                            whileHover ={{scale:1.2}}>About Me</motion.h2>
                             <p className="font-medium my-2">
                             {`Hi, I am Keyukemi Ubi. Everyone calls me Keyu or K; whichever you choose is fine.  
                             You are probably here because you are curious about me. 
@@ -65,7 +66,8 @@ const about = () => {
                                 Keep scrolling to see the tools, languages, and frameworks I know. 
                                 `}
                             </p>
-                            <motion.h3 className="text-lg font-bold text-headline/75" whileHover ={{scale:1.2}}>When I am not working, Who am I?</motion.h3>
+                            <motion.h3 className="text-lg font-bold text-headline/75 dark:text-primary" 
+                            whileHover ={{scale:1.2}}>When I am not working, Who am I?</motion.h3>
                             <p className="font-medium my-2">
                                 {`A wanderer. I like to travel, see new places, experience new cultures, and pick up new languages.
                                     I also like to stay fit and healthy, so I am a gym rat. 
@@ -74,7 +76,8 @@ const about = () => {
                                 `}
                             </p>
                            
-                            <motion.h3 className="text-lg font-bold  text-headline/75" whileHover ={{scale:1.2}}>Viva la Vida</motion.h3>
+                            <motion.h3 className="text-lg font-bold  text-headline/75 dark:text-primary " 
+                            whileHover ={{scale:1.2}}>Viva la Vida</motion.h3>
                             <p className="font-medium my-2">
                                 {`
                                     When I am not doing any of these, I am cuddled up in bed, watching anime or a Korean series.
