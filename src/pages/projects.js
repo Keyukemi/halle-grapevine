@@ -59,7 +59,7 @@ const SPersonalProj = ({type, title, img, link, githubLink}) =>{
                 <div  className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%]  bg-headline rounded-3xl
                 md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem] dark:bg-primary"/>
                 <Link href={link} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
-                    <Image src={img} alt={title} className="w-full h-auto"/>
+                    <Image src={img} alt={title} className="w-full h-[200px]"/>
                 </Link>
                 <div className="w-full flex flex-col items-start justify-between mt-4">
                      <span className="font-medium text-secondary dark:text-highlight text-xl lg:text-lg md:text-base">{type}</span>
@@ -101,41 +101,40 @@ const Projects = () =>{
                         <div className="col-span-12">
                             <PersonalProj 
                                 type={"Personal Project"}
-                                title= "Reck-Eat-Buddy"
-                                summary={`An WebApp to help you learn to cook, document your recipes and plan your meals
-                                A Full-stack feature-rich app built with the T3stack i.e. Typescript, NextJS, and Tailwind CSS. 
+                                title= "PinkFlix-The Clone"
+                                summary={`An simple clone of Netflix with a few design modifications 
+                                    It's a responsive webapp built with Typescript, NextJS, and Tailwind CSS. 
                                 `}
-                                img={rebImage}
-                                link="https://reck-eat-buddy.vercel.app/"
-                                githubLink="/"
+                                img={closet}
+                                link="https://pinkflix-the-clone.vercel.app//"
+                                githubLink="https://github.com/Keyukemi/pinkflix-the-clone"
                             
                             />
                         </div>
                         <div className="col-span-6 md:col-span-12">
                             <SPersonalProj
-                                type={"E-Commerce Website"}
-                                title= "Keyu's Closet"
-                                img={closet}
-                                link="https://keyus-closet.vercel.app/"
-                                githubLink="/"
+                                type={"Personal Project"}
+                                title= "Reck-Eat-Buddy"
+                                img={rebImage}
+                                link="https://reck-eat-buddy.vercel.app/"
+                                githubLink="https://github.com/Keyukemi/reck-eat-buddy"
                              />    
                         </div>
                         <div className="col-span-6 md:col-span-12">
-                              <SPersonalProj 
-                                type={"Personal Project"}
-                                title= "Human Detector App"
-                                img={humandetect}
-                                link="https://humandetector-production.up.railway.app/"
-                                githubLink="/"
-                              />
+                                <SPersonalProj 
+                                    type={"Fun Project"}
+                                    title= "To-Do List"
+                                    img={todoImage}
+                                    link="https://keyukemi.github.io/-colofulTodoList/"
+                                    githubLink="https://github.com/Keyukemi/-colofulTodoList"
+                                />
+                              
                         </div>
                         <div className="col-span-12">
                             <PersonalProj 
                                 type={"Company Website"}
                                 title= "DGL Consulting"
-                                summary={`An WebApp to help you learn to cook, document your recipes and plan your meals
-                                A Full-stack feature-rich app built with the T3stack i.e. Typescript, NextJS, and Tailwind CSS. 
-                                `}
+                                summary={`A company website built with HTML, CSS and Vanilla Javascript.`}
                                 img={dglImage}
                                 link="https://myfirstproject.keyukemi.repl.co/"
                                 githubLink="/"
@@ -143,22 +142,23 @@ const Projects = () =>{
                         </div>
                         <div className="col-span-6 md:col-span-12">
                             <SPersonalProj 
-                                type={"API/Tools"}
-                                title= "Book Management API"
-                                img={bookMgtApi}
-                                link="/"
-                                githubLink="/"
+                                type={"Personal Project"}
+                                title= "Human Detector App"
+                                img={humandetect}
+                                link="https://humandetector-production.up.railway.app/"
+                                githubLink="https://github.com/Keyukemi/HumanDetector"
                             />
                         </div>
                         <div className="col-span-6 md:col-span-12">
                             <SPersonalProj 
-                                type={"Fun Project"}
-                                title= "To-Do List"
-                                img={todoImage}
-                                link="/"
-                                githubLink="/"
+                                type={"API/Tools"}
+                                title= "Book Management API"
+                                img={bookMgtApi}
+                                link="https://github.com/Keyukemi/BookMgtApi"
+                                githubLink="https://github.com/Keyukemi/BookMgtApi"
                             />
                         </div>
+                        
 
                     </div>
                 </Layout>
