@@ -25,3 +25,45 @@
     )
     rgb(var(--background-start-rgb));
 } */
+
+.btn-shine-light {
+  padding: 12px 0;
+  padding-right: 7px;
+  background: linear-gradient(to right, #292929 0, #7d7b7b 10%, #ff5470 20%);
+  background-position: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s infinite linear;
+  /* animation-delay: 10s; */
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+}
+
+.btn-shine-dark {
+  padding: 12px 0;
+  padding-right: 7px;
+  background: linear-gradient(to right, #292929 0, #7d7b7b 10%, #00ebc7 20%);
+  background-position: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s infinite linear;
+  /* animation-delay: 10s; */
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+}
+
+
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  90% {
+    background-position: 1080px;
+  }
+  100% {
+    background-position: 1080px;
+  }
+}

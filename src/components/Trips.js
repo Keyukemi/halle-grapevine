@@ -33,7 +33,7 @@ const Trips = ({}) =>{
     )
     return(
         <>
-            <div className="my-64 sm:my-24">
+            <div className="mt-56 sm:my-24">
                 <h2 className="font-bold text-8xl w-full text-center mb-8 md:text-6xl md:mt-32 sm:text-4xl sm:mt-16 md:mb-16">World Travel</h2>
                 <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
 

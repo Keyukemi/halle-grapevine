@@ -6,11 +6,10 @@ import Layout from "@/components/Layout";
 import { AnimatedHello } from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
 import rebImage from "../../public/images/project_images/rebimg.png"
-import bookMgtApi from "../../public/images/project_images/bookMgtApi.png"
 import closet from "../../public/images/project_images/closet.png"
-import dglImage from "../../public/images/project_images/dglImage.png"
-import humandetect from "../../public/images/project_images/humandetect.png"
-import todoImage from "../../public/images/project_images/todoImage.png"
+import quickstart from "../../public/images/project_images/qs-dp-mono.png"
+import brightwilliams from "../../public/images/project_images/wjbright.png"
+import waza from "../../public/images/project_images/wazapayout2.png"
 import TransitionEffect from "@/components/TransitionEffect";
 
 
@@ -59,7 +58,7 @@ const SPersonalProj = ({type, title, img, link, githubLink}) =>{
                 <div  className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%]  bg-headline rounded-3xl
                 md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem] dark:bg-primary"/>
                 <Link href={link} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
-                    <Image src={img} alt={title} className="w-full h-[200px]"/>
+                    <Image src={img} alt={title} className=""/>
                 </Link>
                 <div className="w-full flex flex-col items-start justify-between mt-4">
                      <span className="font-medium text-secondary dark:text-highlight text-xl lg:text-lg md:text-base">{type}</span>
@@ -89,21 +88,45 @@ const Projects = () =>{
         <>
             <Head>
                 <title>Keyukemi | About Page</title>
-                <meta name="description" content="What you need to know about Keyukemi Ubi"/>
+                <meta name="description" content="Projects by Keyukemi Ubi"/>
             </Head>
 
             <main className="w-full mb-16 flex flex-col items-center justify-center">
                 <Layout className="pt-16">
-                    <AnimatedHello text= "Build Epic Shit!" 
-                    className="!text-center text-7xl mb-16 sm:!text-5xl sm:mb-8 xs:!text-4xl" />
+                    <AnimatedHello text= "Software Developer & Technical Writer" 
+                    className="!text-center text-7xl mb-12 sm:!text-5xl sm:mb-8 xs:!text-4xl mt-10" />
 
                     <div className="grid grid-col-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+                        <div className="col-span-12">
+                                <PersonalProj 
+                                    type={"Paid Project"}
+                                    title= "Portfolio Website"
+                                    summary={`A responsive personal portfolio website built using NextJs and Markdown based on tailwind template design 
+                                    `}
+                                    img={brightwilliams}
+                                    link="https://www.wjbright.com/"
+                                    githubLink="https://github.com/wjbright/-"
+                                
+                                />
+                            </div>
+                        <div className="col-span-12">
+                            <PersonalProj 
+                                type={"Paid Project"}
+                                title= "Technical Documentation Writing"
+                                summary={`A well curated and structured technical documentation for the waza payout feature hosted on ReadMe.com. 
+                                `}
+                                img={waza}
+                                link="https://docs.waza.co/docs/payouts-introduction/"
+                                githubLink="https://docs.waza.co/docs/payouts-introduction"
+                            
+                            />
+                        </div>
                         <div className="col-span-12">
                             <PersonalProj 
                                 type={"Personal Project"}
                                 title= "PinkFlix-The Clone"
-                                summary={`An simple clone of Netflix with a few design modifications 
-                                    It's a responsive webapp built with Typescript, NextJS, and Tailwind CSS. 
+                                summary={` It's a responsive webapp clone of Netflix with a quirky design modifications 
+                                    built with Typescript, NextJS, and Tailwind CSS. 
                                 `}
                                 img={closet}
                                 link="https://pinkflix-the-clone.vercel.app//"
@@ -112,53 +135,26 @@ const Projects = () =>{
                             />
                         </div>
                         <div className="col-span-6 md:col-span-12">
+                                <SPersonalProj 
+                                    type={"Fun Project"}
+                                    title= "Keyu's Kloset Store"
+                                    img={quickstart}
+                                    link="https://quickstart-mono-directpay.vercel.app"
+                                    githubLink="https://github.com/Keyukemi/quickstart-mono-directpay"
+                                />
+                             
+                        </div>
+                        <div className="col-span-6 md:col-span-12">
                             <SPersonalProj
-                                type={"Personal Project"}
+                                type={"Personal Project (in progress)"}
                                 title= "Reck-Eat-Buddy"
                                 img={rebImage}
                                 link="https://reck-eat-buddy.vercel.app/"
                                 githubLink="https://github.com/Keyukemi/reck-eat-buddy"
                              />    
                         </div>
-                        <div className="col-span-6 md:col-span-12">
-                                <SPersonalProj 
-                                    type={"Fun Project"}
-                                    title= "To-Do List"
-                                    img={todoImage}
-                                    link="https://keyukemi.github.io/-colofulTodoList/"
-                                    githubLink="https://github.com/Keyukemi/-colofulTodoList"
-                                />
-                              
-                        </div>
-                        <div className="col-span-12">
-                            <PersonalProj 
-                                type={"Company Website"}
-                                title= "DGL Consulting"
-                                summary={`A company website built with HTML, CSS and Vanilla Javascript.`}
-                                img={dglImage}
-                                link="https://myfirstproject.keyukemi.repl.co/"
-                                githubLink="/"
-                            />
-                        </div>
-                        <div className="col-span-6 md:col-span-12">
-                            <SPersonalProj 
-                                type={"Personal Project"}
-                                title= "Human Detector App"
-                                img={humandetect}
-                                link="https://humandetector-production.up.railway.app/"
-                                githubLink="https://github.com/Keyukemi/HumanDetector"
-                            />
-                        </div>
-                        <div className="col-span-6 md:col-span-12">
-                            <SPersonalProj 
-                                type={"API/Tools"}
-                                title= "Book Management API"
-                                img={bookMgtApi}
-                                link="https://github.com/Keyukemi/BookMgtApi"
-                                githubLink="https://github.com/Keyukemi/BookMgtApi"
-                            />
-                        </div>
-                        
+                       
+        
 
                     </div>
                 </Layout>
