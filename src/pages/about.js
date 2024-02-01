@@ -4,9 +4,8 @@ import Head from "next/head";
 import {motion, useSpring, useMotionValue, useInView} from "framer-motion"; 
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import profileImage from "../../public/images/creative_images/coolgirl102.JPG"
+import coolgirl102 from "../../public/images/creative_images/coolgirl102.png"
 import TechSkills from "@/components/TechSkills";
-import Trips from "@/components/Trips";
 import TransitionEffect from "@/components/TransitionEffect";
 import Footer from "@/components/Footer";
 
@@ -98,7 +97,7 @@ const about = () => {
                             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-headline bg-primary 
                             dark:bg-headline dark:border-primary p-8 xl:col-span-4 md:order-1 md:col-span-8 sm:mt-10">
                                 <div  className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-headline dark:bg-primary"/>
-                                <Image src={profileImage} alt="" className=" w-full h-auto rounded-2xl" 
+                                <Image src={coolgirl102} alt="" className=" w-full h-auto rounded-2xl" 
                                 priority sizes="(max-width:768px) 100vw, 
                                 (max-width:1200px) 50vw, 33vw"/>
                             </div>
