@@ -95,6 +95,8 @@ const Projects = () =>{
                 <Layout className="pt-16">
                     <AnimatedHello text= "Software Developer & Technical Writer" 
                     className="!text-center text-7xl mb-12 sm:!text-5xl sm:mb-8 xs:!text-4xl mt-10" />
+                    {/* <AnimatedHello text= "Do epic shit!" 
+                    className="!text-center text-2xl mb-12 sm:!text-5xl sm:mb-8 xs:!text-4xl text-gray-400" /> */}
 
                     <div className="grid grid-col-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
                         <div className="col-span-12">

@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import Head from 'next/head';
-import profilepix from "../../public/images/creative_images/coolgirl101.JPG";
-import Link from 'next/link';
+import profilepix from "../../public/images/creative_images/coolgirl101.png";
 import TransitionEffect from '@/components/TransitionEffect';
 import { MdOutgoingMail } from "react-icons/md";
-import {motion} from "framer-motion"; 
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -41,16 +40,13 @@ export default function Home() {
 
           {/* Icons Container */}
           <div className="flex p-2 mt-4">
-            <motion.Link className="flex items-center justify-center" href="/">
+            <Link className="flex items-center justify-center" href="/">
                 <MdOutgoingMail 
                 className="bg-secondary text-headline text-xl p-2.5 px-7 rounded-lg dark:text-primary
                 dark:bg-highlight hover:dark:border-primary hover:dark:bg-transparent hover:border-headline
-                justify-center w-24 h-auto ml-3 border-solid border-2 hover:bg-transparent hover:text-headline" 
-                whileHover={{y: -3}}
-                whileTap={{scale: 0.8}}
-                 />
+                justify-center w-24 h-auto ml-3 border-solid border-2 hover:bg-transparent hover:text-headline"/>
 
-            </motion.Link>
+            </Link>
           </div>
         </div>
       </main>
