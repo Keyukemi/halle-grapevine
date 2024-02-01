@@ -50,8 +50,8 @@ const NavBar = () => {
 
     return(
 
-        <header className="w-full px-32 py-8 font-medium flex items-center 
-        justify-between dark:text-primary relative z-10 lg:px-16 md:px-12 sm:px-8 ">
+        <header className="w-full font-medium flex items-center fixed top-0 left-0  px-8 py-4 z-50
+        justify-between dark:text-primary lg:px-16 md:px-12 sm:px-8 ">
 
             <button className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
                 <span className= {`bg-headline dark:bg-primary transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm
@@ -64,10 +64,9 @@ const NavBar = () => {
                 {/* Desktop Menu */}
             <div className="w-full flex justify-between items-center lg:hidden">
                 <nav>
-                    <CustomLink href="/" title="Home" className="mr-4 text-lg"/>
                     <CustomLink href="/about" title="About me" className="mx-4 text-lg"/>
                     <CustomLink href="/projects" title="Projects" className="mx-4 text-lg" />
-                    <CustomLink href="/creative" title="Creative Corner" className="ml-4 text-lg"/>
+                    <CustomLink href="/my-playground" title="Playground" className="ml-4 text-lg"/>
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wrap">
@@ -117,7 +116,7 @@ const NavBar = () => {
                         <MobCustomLink href="/" title="Home" className="text-lg"toggle={handleClick} />
                         <MobCustomLink href="/about" title="About me" className="text-lg"toggle={handleClick}/>
                         <MobCustomLink href="/projects" title="Projects" className="text-lg"toggle={handleClick} />
-                        <MobCustomLink href="/creative" title="Creative Corner" className="text-lg"toggle={handleClick}/>
+                        <MobCustomLink href="/my-playground" title="Playground" className="text-lg"toggle={handleClick}/>
                     </nav>
     
                     <nav className="flex items-center justify-center flex-wrap">

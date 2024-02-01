@@ -6,7 +6,7 @@ import kkcodesIcon from "../../public/images/kkCodes.png"
 
 const Footer = () => {
     return(
-        <footer className="w-full border-t-2 border-solid border-headline font-medium text-lg 
+        <footer className="w-full font-medium text-lg 
         text-headline dark:text-primary dark:border-primary sm:text-base ">
             <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6"> 
                 <span>{new Date().getFullYear()}&copy; All Rights Reserved</span>

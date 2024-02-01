@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
     return(
       <>
       <Head>
-        <title>Keyukemi.Dev</title>
+        <title>Keyukemi.DEV</title>
         <meta name="description" content="" />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel="icon" href="/kklogo.ico"/>
@@ -29,7 +29,6 @@ export default function App({ Component, pageProps }) {
         <AnimatePresence mode='wait'>
           <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
-        <Footer/>
       </main>
 
     </>
