@@ -5,6 +5,8 @@ import TransitionEffect from "@/components/TransitionEffect";
 import Trips from "@/components/Trips";
 
 
+
+
  
 const ComingSoon = ({message}) =>{
     return( 
@@ -19,7 +21,7 @@ const ComingSoon = ({message}) =>{
     )
 } 
 
-const Creative = () =>{
+const Playground = () =>{
     return(
         <>
             <Head>
@@ -28,18 +30,17 @@ const Creative = () =>{
             </Head>
 
             <TransitionEffect/>
-            <main className="w-full mb-16 flex flex-col items-center justify-center min-h-screen">
-                <div>
-                    <ComingSoon
-                        message={"Coming Soon..."}
-
-                        link={"/"}
-                    />
-
+            <main className="w-full mb-20 flex flex-col items-center justify-center min-h-screen">
+                <div className="text-headline dark:text-primary">
+                    <div>
+                    <Trips/>
+                    </div>
                 </div>
+                
             </main>
+            <Footer/>
         </>
     )
 }
 
-export default Creative
+export default Playground
