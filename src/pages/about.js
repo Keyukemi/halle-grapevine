@@ -55,14 +55,15 @@ const about = () => {
                             <p className="font-medium my-2">
                             {`Hi, I am Keyukemi Ubi. Everyone calls me Keyu or K; whichever you choose is fine.  
                             You are probably here because you are curious about me. 
-                            This bio won’t tell you much, but it will give you a glimpse, at the very least. .`}
+                            This bio won’t tell you much, but it will give you a glimpse, at the very least.`}
                             </p>
                             <p className="font-medium my-2">
-                                {`Work is essential to our human existence so that I will start with that. 
-                                I contribute to maintaining the structural design of society by being a Software engineer. 
-                                So at least 8 hours a day, you might find me working on something that concerns code. 
+                                {`Work is essential to our human existence so I will start with that. 
+                                I contribute to maintaining the structural design of society by being a software engineer. 
+                                This means a few hours a day, you might find me working on something that concerns code. 
                                 I am a User Interface Engineer, or what people might call Frontend Engineer, but I dabble in the backend tasks from time to time. 
-                                I like to say UI Engineer because I really care about implementing designs that make people have the most seamless and enthralling experience that leaves people thrilled.
+                                I like to say UI Engineer (mostly because it sounds cooler) because I really care about implementing designs 
+                                that make people have the most seamless and enthralling experiences.
                                 `}
                             </p>
                             <p className="font-medium my-2">
@@ -73,9 +74,9 @@ const about = () => {
                             <motion.h3 className="text-lg font-bold text-headline/75 dark:text-primary" 
                             whileHover ={{scale:1.2}}>When I am not working, Who am I?</motion.h3>
                             <p className="font-medium my-2">
-                                {`A wanderer. I like to travel, see new places, experience new cultures, and pick up new languages.
+                                {`A wanderer with a severe case of fernweh. I like to travel, see new places, experience new cultures, and pick up new languages.
                                     I also like to stay fit and healthy, so I am a gym rat. 
-                                    I general enjoy solo physical activities and want to take on more of these- maybe skating, who knows?
+                                    I generally enjoy solo physical activities and want to take on more of these- maybe skating, who knows?
                                     My writings are my primary channel of expression, so you can find me on Medium talking about everything and anything. 
                                 `}
                             </p>
@@ -90,7 +91,12 @@ const about = () => {
                             </p>
                             <p className="font-medium my-2">
                                 {`
-                                    Either way, Thank you for being curious about me 🖤
+                                    Either way, Thank you for being curious about me.
+                                `}
+                            </p>
+                            <p className="font-medium my-2">
+                                {`
+                                    🖤
                                 `}
                             </p>
                         </div>
