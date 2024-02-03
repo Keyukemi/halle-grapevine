@@ -40,12 +40,11 @@ export default function Home() {
 
           {/* Icons Container */}
           <div className="flex p-2 mt-4">
-            <Link className="flex items-center justify-center" href="/">
+            <Link className="flex items-center justify-center" href="mailto:almostvintagebykeyu@gmail.com">
                 <MdOutgoingMail 
                 className="bg-secondary text-headline text-xl p-2.5 px-7 rounded-lg dark:text-primary
                 dark:bg-highlight hover:dark:border-primary hover:dark:bg-transparent hover:border-headline
                 justify-center w-24 h-auto ml-3 border-solid border-2 hover:bg-transparent hover:text-headline"/>
-
             </Link>
           </div>
         </div>

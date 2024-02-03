@@ -40,51 +40,32 @@ const Trips = ({}) =>{
                     {/* The loading line  */}
                     <motion.div style={{scaleY: scrollYProgress}} 
                     className="absolute left-9 top-0 w-[4px] origin-top h-full bg-headline dark:bg-primary 
-                    md:w-[2px] md:left-[30px] xs:left-[20px]"/>
+                    md:w-[2px] md:left-[30px] xs:left-[20px] "/>
 
                     <ul className="w-full flex flex-col item-start justify-between ml-4 xs:ml-2">
                         <Details
                             country={"Republic of Benin"}
                             month={"April-June"}
                             year={"Twenty Twenty-Two"}
-                            activities={`Spent time visiting landmark and historical places in Benin Repulic locations. 
-                            I lived as a Nomad in Cotonou city for 3 months and during that time I visited smaller towns like Ganvie and Grand-popo `}
+                            activities={`Spent time visiting landmark and historical places in Benin Repulic. 
+                            I lived as a digital Nomad in Cotonou city for 3 months. I mostly worked (remotely), did yoga and spent my evenings on the beach.
+                            During my time there, I also visited smaller towns like Ganvie and Grand-popo.`}
                         />
                         <Details
                             country={"Togo"}
                             month={"1/2 July"}
                             year={"Twenty Twenty-Two"}
-                            activities={`Spent time visiting landmark and historical places in Benin Repulic locations. 
-                            I lived as a Nomad in Cotonou city for 3 months and during that time I visited smaller towns like Ganvie and Grand-popo `}
+                            activities={`I mostly rested in Lome but visited smaller towns close by like Kpalime. I went to the waterfall- Cascade Kamalo 
+                            (where I pretended to play the xylophone like an expert) and Les Valles des Chauves-Souris. Also saw Le Chateau Viale and spent some time learning about Togolese history.`}
                         />
                         <Details
                             country={"Ghana"}
-                            month={"2/2 July"}
-                            year={"Twenty Twenty-Two"}
-                            activities={`Spent time visiting landmark and historical places in Benin Repulic locations. 
-                            I lived as a Nomad in Cotonou city for 3 months and during that time I visited smaller towns like Ganvie and Grand-popo `}
-                        />
-                        <Details
-                            country={"Côte d'Ivoire (❌)"}
-                            month={"October"}
+                            month={"January"}
                             year={"Twenty Twenty-Three"}
-                            activities={`Spent time visiting landmark and historical places in Benin Repulic locations. 
-                            I lived as a Nomad in Cotonou city for 3 months and during that time I visited smaller towns like Ganvie and Grand-popo `}
-                        />
-                        <Details
-                            country={"The Gambia (❌)"}
-                            month={"November"}
-                            year={"Twenty Twenty-Three"}
-                            activities={`Spent time visiting landmark and historical places in Benin Repulic locations. 
-                            I lived as a Nomad in Cotonou city for 3 months and during that time I visited smaller towns like Ganvie and Grand-popo `}
-                        />
-                        <Details 
-                            country={"Senegal(❌)"} 
-                            month={"December"}
-                            year={"Twenty Twenty-Three"}
-                            activities={`Spent time visiting landmark and historical places in Benin Repulic locations. 
-                            I lived as a Nomad in Cotonou city for 3 months and during that time I visited smaller towns like Ganvie and Grand-popo `}
-                        />
+                            activities={`A company trip but still a trip. I vistited the Black Star Gate & the Art market. 
+                            Had the tastiest sorbet during an evening walk with my collegaue. 
+                            Then visited beautifully cozy mexican restaraunt called Borracha and had a swell time playing games and pretending to dance salsa.`}
+                        /> 
                     </ul>
                 </div>
             </div>
