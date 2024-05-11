@@ -86,7 +86,7 @@ const about = () => {
 
                         {/* About Me Section */}
                         <div className="flex flex-col  w-full ">
-                            <motion.h2 className="uppercase text-2xl text-center font-bold text-headline dark:text-primary " whileHover ={{scale:1.2}}>About Me</motion.h2>
+                            <motion.h2 className="uppercase text-5xl md:text-2xl text-center font-bold text-secondary dark:text-highlight " whileHover ={{scale:1.2}}>About Me</motion.h2>
                             <p className="font-medium my-2">
                                 {`Hi, I am Keyukemi Ubi. Everyone calls me Keyu or K; whichever you choose is fine.  
                                 You are probably here because you are curious about me. 
@@ -106,7 +106,7 @@ const about = () => {
                                 Keep scrolling to see the tools, languages, and frameworks I work with. 
                                 `}
                             </p>
-                            <motion.h3 className="text-lg font-bold text-headline dark:text-primary" whileHover ={{scale:1.0}}>When I am not working, Who am I?</motion.h3>
+                            <motion.h3 className="text-lg font-bold text-secondary dark:text-highlight" whileHover ={{scale:1.0}}>When I am not working, Who am I?</motion.h3>
                             <p className="font-medium my-2">
                                 {`A wanderer with a severe case of fernweh. I like to travel, see new places, experience new cultures, and pick up new languages.
                                     I also like to stay fit and healthy, so I am a gym rat. 
@@ -115,7 +115,7 @@ const about = () => {
                                 `}
                             </p>
                         
-                            <motion.h3 className="text-lg font-bold  text-headline dark:text-primary " whileHover ={{scale:1.0}}>Viva la Vida</motion.h3>
+                            <motion.h3 className="text-lg font-bold  text-secondary dark:text-highlight " whileHover ={{scale:1.0}}>Viva la Vida</motion.h3>
                             <p className="font-medium my-2">
                                 {`
                                     When I am not doing any of these, I am cuddled up in bed, watching anime or a korean series.
@@ -137,7 +137,7 @@ const about = () => {
                             <h2 className="text-center text-5xl m-3 p-4 font-bold md:text-3xl sm:text-3xl xs:text-xl">Tools of my Trade</h2>                  
                             <div className="grid grid-cols-3 gap-8 sm:grid-cols-1">
                                 <div className="p-4 border rounded-lg hover:border-darkshadow">
-                                    <h3 className="text-xl font-bold mb-4">Programming Languages</h3>
+                                    <h3 className="text-xl font-bold mb-4 text-secondary dark:text-highlight">Programming Languages</h3>
                                     <ul className="list-disc list-inside">
                                         <li>JavaScript</li>
                                         <li>Typscript</li>
@@ -147,18 +147,18 @@ const about = () => {
                                     </ul>
                                 </div>
                                 <div className="p-4 border rounded-lg hover:border-darkshadow">
-                                    <h3 className="text-xl font-bold mb-4">Styling Tools</h3>
+                                    <h3 className="text-xl font-bold mb-4 text-secondary dark:text-highlight">Styling Tools</h3>
                                     <ul className="list-disc list-inside">
-                                        <li>Tailwind CSS</li>
-                                        <li>Sass</li>
-                                        <li>Bootstrap</li>
                                         <li>Styled-components</li>
+                                        <li>Tailwind CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>Sass</li> 
                                     </ul>
                                 </div>
                                 <div className="p-4 border rounded-lg hover:border-darkshadow">
-                                    <h3 className="text-xl font-bold mb-4">Helper Tools</h3>
+                                    <h3 className="text-xl font-bold mb-4 text-secondary dark:text-highlight">Helper Tools</h3>
                                     <ul className="list-disc list-inside">
-                                        <li>npm / Yarn</li>
+                                        <li>NPM / Yarn</li>
                                         <li>React</li>
                                         <li>Redux</li>
                                         <li>Git</li>
