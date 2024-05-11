@@ -41,7 +41,7 @@ const MobCustomLink = ({href, title, className="", toggle}) =>{
 }
 
 const NavBar = () => {
-    const [mode, setMode] = useThemeSwitcher();
+    const [mode, toggleMode] = useThemeSwitcher();
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = () =>{
@@ -50,9 +50,8 @@ const NavBar = () => {
 
     return(
 
-        <header className="w-full font-medium flex items-center fixed top-0 left-0  px-8 py-4 z-50
-        justify-between dark:text-primary lg:px-16 md:px-12 sm:px-8 ">
-
+        <header className="w-full font-medium flex items-center 
+        fixed top-0 left-0 px-8 py-4 z-50 justify-between dark:text-primary lg:px-16 md:px-12 sm:px-8 bg-primary dark:bg-headline">
             <button className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
                 <span className= {`bg-headline dark:bg-primary transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm
                 ${isOpen ? 'rotate-45 translate-y-1': '-translate-y-0.5'}`}></span>
@@ -83,16 +82,17 @@ const NavBar = () => {
                     whileTap={{scale: 0.8}}> <LinkedInIcon/> </motion.a>
 
                     {/* Light and Dark Mode Switcher */}
-                    <button className={`w-10 mx-3 flex items-center justify-center rounded-full p-1
-                    ${mode === "light"? "bg-headline text-primary": "bg-primary text-headline"}`} 
-                    onClick={() => setMode(mode === "light" ? "dark" : "light")}>
-                        {
-                            mode === "dark" ?
-                            <SunIcon className={"fill-headline"}/>
-                            : <MoonIcon className={"fill-headline"}/>
-                        }
-                    </button>
-
+                    <div className={`transition-colors duration-5000 ${mode === "light" ? "" : "dark"}`}>
+                        <button className={`w-10 mx-3 flex items-center justify-center rounded-full p-1
+                        ${mode === "light"? "bg-headline text-primary": "bg-primary text-headline"}`} 
+                        onClick={() => toggleMode(mode === "light" ? "dark" : "light")}>
+                            {
+                                mode === "dark" ?
+                                <SunIcon className={"fill-headline"}/>
+                                : <MoonIcon className={"fill-headline"}/>
+                            }
+                        </button>
+                    </div>
 
                     {/* Blog Button */}
                     <motion.a href="https://medium.com/@keyukemi" target={"_blank"}
@@ -138,7 +138,7 @@ const NavBar = () => {
                         {/* Light and Dark Mode Switcher */}
                         <button className={`w-10 mx-3 flex items-center justify-center rounded-full p-1 sm:mx-1
                         ${mode === "light"? "bg-headline text-primary": "bg-primary text-headline"}`} 
-                        onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+                        onClick={() => toggleMode(mode === "light" ? "dark" : "light")}>
                             {
                                 mode === "dark" ?
                                 <SunIcon className={"fill-headline"}/>

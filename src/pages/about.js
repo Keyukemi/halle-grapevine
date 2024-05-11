@@ -48,14 +48,49 @@ const about = () => {
                     <AnimatedWorld text= "Live Audaciously..."className="!text-xl lg:!text-lg  sm:!text-md
                     italic !text-center text-secondary mb-20 sm:mb-8 dark:text-highlight"/>
 
-                    <div className="grid grid-cols-8 gap-16 w-full sm:gap-8">
-                        <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 ">
-                            <motion.h2 className="uppercase text-2xl font-bold text-headline/75  dark:text-primary " 
-                            whileHover ={{scale:1.2}}>About Me</motion.h2>
+                    <div className="grid grid-cols-1 gap-16 w-full sm:gap-8">
+                        {/* Image Section */}
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="relative rounded-2xl border-2 border-solid bg-primary dark:bg-headline dark:border-black p-8 w-full sm:w-3/4 lg:w-auto max-w-md">
+                                <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-headline opacity-50 dark:bg-darkshadow" />
+                                <Image src={coolgirl102} alt="" className="w-full h-auto rounded-2xl" priority sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"/>
+                            </div>
+                        </div>
+
+
+                        {/* Clients Details Section */}
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="flex justify-between items-center text-center">
+                                <div className="flex flex-col items-center justify-center m-5">
+                                    <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                                        <AnimatedNumbers value={2}/>+
+                                    </span> 
+                                    <h2 className="text-xl font-medium capitalize text-headline/75 dark:text-primary 
+                                    xl:text-center md:text-lg sm:text-base xs:text-sm sm:py-3">Satisfied Clients</h2>
+                                </div>
+                                <div className="flex flex-col items-center justify-center m-5">
+                                    <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                                        <AnimatedNumbers value={5}/>+
+                                    </span>
+                                    <h2 className="text-xl font-medium capitalize text-headline/75 dark:text-primary xl:text-center md:text-lg sm:text-base xs:text-sm sm:py-3">Projects Completed</h2>
+                                </div> 
+                                <div className="flex flex-col items-center justify-center m-5">
+                                    <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                                        <AnimatedNumbers value={3}/>+
+                                    </span>
+                                    <h2 className="text-xl font-medium capitalize text-headline/75 dark:text-primary xl:text-center md:text-lg sm:text-base xs:text-sm sm:py-3">Countries Visited</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {/* About Me Section */}
+                        <div className="flex flex-col  w-full ">
+                            <motion.h2 className="uppercase text-2xl text-center font-bold text-headline dark:text-primary " whileHover ={{scale:1.2}}>About Me</motion.h2>
                             <p className="font-medium my-2">
-                            {`Hi, I am Keyukemi Ubi. Everyone calls me Keyu or K; whichever you choose is fine.  
-                            You are probably here because you are curious about me. 
-                            This bio won’t tell you much, but it will give you a glimpse, at the very least.`}
+                                {`Hi, I am Keyukemi Ubi. Everyone calls me Keyu or K; whichever you choose is fine.  
+                                You are probably here because you are curious about me. 
+                                This bio won’t tell you much, but it will give you a glimpse, at the very least.`}
                             </p>
                             <p className="font-medium my-2">
                                 {`Work is essential to our human existence so I will start with that. 
@@ -71,8 +106,7 @@ const about = () => {
                                 Keep scrolling to see the tools, languages, and frameworks I work with. 
                                 `}
                             </p>
-                            <motion.h3 className="text-lg font-bold text-headline/75 dark:text-primary" 
-                            whileHover ={{scale:1.2}}>When I am not working, Who am I?</motion.h3>
+                            <motion.h3 className="text-lg font-bold text-headline dark:text-primary" whileHover ={{scale:1.0}}>When I am not working, Who am I?</motion.h3>
                             <p className="font-medium my-2">
                                 {`A wanderer with a severe case of fernweh. I like to travel, see new places, experience new cultures, and pick up new languages.
                                     I also like to stay fit and healthy, so I am a gym rat. 
@@ -80,9 +114,8 @@ const about = () => {
                                     My writings are my primary channel of expression, so you can find me on Medium talking about everything and anything. 
                                 `}
                             </p>
-                           
-                            <motion.h3 className="text-lg font-bold  text-headline/75 dark:text-primary " 
-                            whileHover ={{scale:1.2}}>Viva la Vida</motion.h3>
+                        
+                            <motion.h3 className="text-lg font-bold  text-headline dark:text-primary " whileHover ={{scale:1.0}}>Viva la Vida</motion.h3>
                             <p className="font-medium my-2">
                                 {`
                                     When I am not doing any of these, I am cuddled up in bed, watching anime or a korean series.
@@ -96,42 +129,45 @@ const about = () => {
                             </p>
                             <p className="font-medium my-2">
                                 {`
-                                    🖤
+                                   With Love, Keyu🖤
                                 `}
                             </p>
                         </div>
-                            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-headline bg-primary 
-                            dark:bg-headline dark:border-primary p-8 xl:col-span-4 md:order-1 md:col-span-8 sm:mt-10">
-                                <div  className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-headline dark:bg-primary"/>
-                                <Image src={coolgirl102} alt="" className=" w-full h-auto rounded-2xl" 
-                                priority sizes="(max-width:768px) 100vw, 
-                                (max-width:1200px) 50vw, 33vw"/>
+                        <div>
+                            <h2 className="text-center text-5xl m-3 p-4 font-bold md:text-3xl sm:text-3xl xs:text-xl">Tools of my Trade</h2>                  
+                            <div className="grid grid-cols-3 gap-8 sm:grid-cols-1">
+                                <div className="p-4 border rounded-lg hover:border-darkshadow">
+                                    <h3 className="text-xl font-bold mb-4">Programming Languages</h3>
+                                    <ul className="list-disc list-inside">
+                                        <li>JavaScript</li>
+                                        <li>Typscript</li>
+                                        <li>Python</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
+                                <div className="p-4 border rounded-lg hover:border-darkshadow">
+                                    <h3 className="text-xl font-bold mb-4">Styling Tools</h3>
+                                    <ul className="list-disc list-inside">
+                                        <li>Tailwind CSS</li>
+                                        <li>Sass</li>
+                                        <li>Bootstrap</li>
+                                        <li>Styled-components</li>
+                                    </ul>
+                                </div>
+                                <div className="p-4 border rounded-lg hover:border-darkshadow">
+                                    <h3 className="text-xl font-bold mb-4">Helper Tools</h3>
+                                    <ul className="list-disc list-inside">
+                                        <li>npm / Yarn</li>
+                                        <li>React</li>
+                                        <li>Redux</li>
+                                        <li>Git</li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
 
-                            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 
-                            xl:flex-row xl:items-center md:order-3">
-                                <div className="flex flex-col items-end justify-center xl:items-center">
-                                    <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                                        <AnimatedNumbers value={2}/>+
-                                    </span> 
-                                    <h2 className="text-xl font-medium capitalize text-headline/75
-                                     dark:text-primary xl:text-center md:text-lg sm:text-base xs:text-sm sm:p-3">Satisfied Clients</h2>
-                                </div>
-                                <div className="flex flex-col items-end justify-center xl:items-center ">
-                                    <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                                    <AnimatedNumbers value={5}/>+</span>
-                                    <h2 className="text-xl font-medium capitalize text-headline/75 
-                                    dark:text-primary xl:text-center md:text-lg sm:text-base xs:text-sm sm:p-3">Projects Completed</h2>
-                                </div> 
-                                <div className="flex flex-col items-end justify-center xl:items-center">
-                                    <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl ">
-                                    <AnimatedNumbers value={3}/>+</span>
-                                    <h2 className="text-xl font-medium capitalize text-headline/75
-                                     dark:text-primary xl:text-center md:text-lg sm:text-base xs:text-sm sm:p-3">Countries Visited</h2>
-                                </div>
-                            </div>
                     </div>
-                    <TechSkills/>
                 </Layout>
                 <Footer/>
             </main>

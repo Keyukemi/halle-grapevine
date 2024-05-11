@@ -26,6 +26,7 @@ module.exports ={
         highlight: "#00ebc7",
         secondary: "#ff5470",
         tertiary: "#fde24f",
+        darkshadow: "#000000",
       },
       animation:{
         'spin-slow': 'spin 8s linear infinite'
